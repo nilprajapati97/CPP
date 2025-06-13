@@ -1,29 +1,31 @@
-//assignment operator overloading
+// assignment operator overloading
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class A
 {
-  private:int x;
+private:
+  int x;
 
-  public: void setdata()
-	{
-    x=100;
-	}
+public:
+  void setdata()
+  {
+    x = 100;
+  }
 
   void display()
-	{ 
-    cout<<x<<endl;
-	}
+  {
+    cout << x << endl;
+  }
 };
 
 int main()
 {
-  A a1,a2(a1);
+  A a1, a2(a1);
   a1.setdata();
-  a2=a1;
+  a2 = a1;
   a2.display();
-  
+
   return 0;
 }
