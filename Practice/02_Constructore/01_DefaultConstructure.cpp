@@ -15,9 +15,9 @@ class A
  public:
   A()
   {
-    cout<< "01.Constructor" <<endl;  
-    x=10;
-    y=20;
+        cout<< "01.Constructor" <<endl;  
+        x=10;
+        y=20;
   }
 
   A(int a)
