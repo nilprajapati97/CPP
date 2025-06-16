@@ -4,7 +4,8 @@
 2. .* (Pointer-to-Member Operator)
 ================================
 Why it can't be overloaded:
-    -> The pointer-to-member operator (.*) is used to access members through a pointer to a member of a class.
+    -> The pointer-to-member operator (.*) is used to access members through a pointer to a member of a 
+       class.
     -> It is a low-level operator that directly interacts with the memory layout of an object.
  *
  *

@@ -8,24 +8,25 @@
 
 using namespace std;
 
-class Car {
-public:
-    Car(const string& name) : name(name)
-    {
-
-    }
-
-    void show() 
-    {
-        cout << "Car: " << name << endl;
-    }
+class Car
+{
 
 private:
     string name;
 
+public:
+    Car(const string &name) : name(name)
+    {
+    }
+
+    void show()
+    {
+        cout << "Car: " << name << endl;
+    }
 };
 
-int main() {
+int main()
+{
 
     unique_ptr<Car> carA = make_unique<Car>("BMW");
     unique_ptr<Car> carB = make_unique<Car>("Audi");

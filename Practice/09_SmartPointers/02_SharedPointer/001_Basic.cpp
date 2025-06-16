@@ -3,8 +3,8 @@
 */
 #include <iostream>
 #include <memory>
-
+using namespace std;
 int main() {
-    std::shared_ptr<int> sp = std::make_shared<int>(100);
-    std::cout << "Value: " << *sp << std::endl;  // Output: 100
+    shared_ptr<int> sp = make_shared<int>(100);
+    cout << "Value: " << *sp <<endl;  // Output: 100
 }

@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 /*
 1. :: (Scope Resolution Operator)
 ================================
@@ -19,7 +19,7 @@ public:
 int A::x = 10;
 
 int main() {
-    std::cout << A::x << std::endl;  // Resolves to class A's x
+    cout << A::x << endl;  // Resolves to class A's x
     return 0;
 }
 
