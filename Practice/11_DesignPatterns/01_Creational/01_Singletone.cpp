@@ -1,15 +1,15 @@
 #include <iostream>
 #include <mutex>
-
+using namespace std;
 class Singleton {
 private:
     static Singleton* instance;
-    static std::mutex mtx; // For thread-safety
+    static mutex mtx; // For thread-safety
 
     // Private constructor
     Singleton()
     {
-        std::cout << "Singleton instance created!" << std::endl;
+        cout << "Singleton instance created!" << endl;
     }
 
     // Delete copy constructor and assignment operator
@@ -21,7 +21,7 @@ public:
     {
         if (instance == nullptr)
         { 
-            std::lock_guard<std::mutex> lock(mtx);
+            lock_guard<mutex> lock(mtx);
             
             if (instance == nullptr)
             {  // Double-checked locking
@@ -33,13 +33,13 @@ public:
     }
 
     void doSomething() {
-        std::cout << "Singleton method called!" << std::endl;
+        cout << "Singleton method called!" << std::endl;
     }
 };
 
 // Initialize static members
 Singleton* Singleton::instance = nullptr;
-std::mutex Singleton::mtx;
+mutex Singleton::mtx;
 
 int main() {
     Singleton* s1 = Singleton::getInstance();
@@ -48,8 +48,8 @@ int main() {
     Singleton* s2 = Singleton::getInstance();
     s2->doSomething();
 
-    std::cout << "s1 address: " << s1 << std::endl;
-    std::cout << "s2 address: " << s2 << std::endl;
+    cout << "s1 address: " << s1 << endl;
+    cout << "s2 address: " << s2 << endl;
 
     return 0;
 }
