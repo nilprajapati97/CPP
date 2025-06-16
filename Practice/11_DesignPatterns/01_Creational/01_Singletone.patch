@@ -35,9 +35,10 @@ The Singleton Pattern ensures that:
 
 -:Implementation of the Singleton Pattern In C++
 ====================================================
-    The Singleton pattern is a creational design pattern in C++ that ensures a class has only one instance and provides a global point of 
-access to that instance. It is used when you want to control the instantiation of a class to ensure that there's a single instance 
-throughout the lifetime of your application.
+    The Singleton pattern is a creational design pattern in C++ that ensures a class has only one 
+instance and provides a global point of access to that instance. It is used when you want to 
+control the instantiation of a class to ensure that there's a single instance throughout the
+lifetime of your application.
 
 Below is an example implementation of the Singleton pattern in C++:
 
