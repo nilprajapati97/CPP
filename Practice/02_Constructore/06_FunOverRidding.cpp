@@ -45,6 +45,6 @@ int main()
 {
     SportScar obj;
     obj.shiftGear();
-    //obj.f2();
+    obj.f2();
 
 }
