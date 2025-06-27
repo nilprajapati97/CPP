@@ -1,6 +1,6 @@
 
 /*
-Ciclick dependency  - destructor n ot called so memory leaks
+Ciclick dependency  - destructor not called so memory leaks
 
 */
 
