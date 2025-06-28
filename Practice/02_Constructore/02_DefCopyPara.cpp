@@ -16,7 +16,7 @@ class A
 	public:
 	A() : x(10), y(20)
 	{
-		cout << "01.Constructor" << endl;
+		cout << "00. Default Constructor" << endl;
 	}
 
 	A(int a) : x(a), y(100)
@@ -38,13 +38,15 @@ class A
 	{
 		cout << "X=" << x << endl
 			<< "Y=" << y << endl;
+		cout << "------------------------" << endl;
 	}
 };
 
 int main()
 {
-	A obj1, obj2(11, 22), obj3 = obj1;
+	A obj(10),obj1, obj2(11, 22), obj3 = obj1;
 
+	obj.print();
 	obj1.print();
 	obj2.print();
 	obj3.print();

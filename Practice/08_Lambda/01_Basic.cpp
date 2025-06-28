@@ -21,9 +21,9 @@ int main()
 
     //Step [2]
     // error: no match for call to ‘(main()::<lambda()>) (int&, int&)
-    [=]() -> auto { cout<<a<<" "<<b<<endl; }();  // Capture by value , non mutable lambda (Not change)
+    //[=]() -> auto { cout<<a<<" "<<b<<endl; }();  // Capture by value , non mutable lambda (Not change)
 
-    //[&]() -> void { a=7; cout<<a<<" "<<b<<endl; }();  // Capture by value , non mutable lambda (Not change)
+    [&]() -> void { a=7; cout<<a<<" "<<b<<endl; }();  // Capture by value , non mutable lambda (Not change)
 
      //[]
 

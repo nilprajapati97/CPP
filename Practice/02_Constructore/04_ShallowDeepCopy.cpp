@@ -20,7 +20,7 @@ class A
 
   }
 
- /*
+ 
  // Deep Copy 
   A(A &obj)
   {
@@ -29,7 +29,6 @@ class A
     strcpy(str,obj.str);
 
   }
-*/
 
 void modify()
 {

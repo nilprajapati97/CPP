@@ -28,7 +28,7 @@ void takeOwnership(unique_ptr<Car> car)
 }
 
 int main() {
-    std::unique_ptr<Car> carPtr = std::make_unique<Car>();
+    unique_ptr<Car> carPtr = make_unique<Car>();
 
     takeOwnership(move(carPtr)); // Ownership transferred
 
