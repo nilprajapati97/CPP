@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+void reverseInPlaceUsingStack(string &str) {
+    stack<char> s;
+
+    // Step 1: Push all characters to stack
+    for (char ch : str) {
+        s.push(ch);
+    }
+
+    // Step 2: Pop and replace original string
+    for (size_t i = 0; i < str.length(); ++i) {
+        str[i] = s.top();
+        s.pop();
+    }
+}
+
+int main() {
+    string str = "StackReverse";
+    cout << "Original: " << str << endl;
+
+    reverseInPlaceUsingStack(str);
+
+    cout << "Reversed: " << str << endl;
+    return 0;
+}
