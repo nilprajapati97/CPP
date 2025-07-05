@@ -1,0 +1,19 @@
+mv "00_Defalut_Member" 01_Basics
+mv "01_Basics" 02_DefaultMembers
+mv "02_Constructore" 03_Constructors
+mv "03_Operator_Overloading" 04_OperatorOverloading
+mv "04_Virtual_Function" 05_VirtualFunctions
+mv "05_Threading" 06_Threading
+mv "07_DS" 07_DataStructures
+mv "08_Lambda" 08_LambdaExpressions
+mv "09_SmartPointers" 09_SmartPointers
+mv "10_STL" 10_STL
+mv "11_DesignPatterns" 11_DesignPatterns
+mv "12_Templete" 12_Templates
+mv "13_Strings" 13_Strings
+mv "14_Defatult_Argument" 14_DefaultArguments
+mv "Mutable" 15_MutableKeyword
+mv "Interview" 16_InterviewPrep
+mv "Ruff" 17_ExtraUtilities
+mv "output" 18_BuildOutputs
+
