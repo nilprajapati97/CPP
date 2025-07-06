@@ -49,3 +49,19 @@ int main() {
 
     return 0;
 }
+
+/*
+
+Output
+==============================================
+Contents of set: 1 3 5
+3 is found in set.
+10 is not found in set.
+After erasing 3: 1 5
+Size: 2
+Is empty: 0
+Lower bound of 5: 5
+Upper bound of 5: 7
+After clear, size: 0
+
+*/
