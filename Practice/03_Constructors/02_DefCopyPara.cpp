@@ -13,7 +13,7 @@ class A
 	int x;
 	int y;
 
-	public:
+public:
 	A() : x(10), y(20)
 	{
 		cout << "00. Default Constructor" << endl;
@@ -37,14 +37,14 @@ class A
 	void print() const
 	{
 		cout << "X=" << x << endl
-			<< "Y=" << y << endl;
+			 << "Y=" << y << endl;
 		cout << "------------------------" << endl;
 	}
 };
 
 int main()
 {
-	A obj(10),obj1, obj2(11, 22), obj3 = obj1;
+	A obj(10), obj1, obj2(11, 22), obj3 = obj1;
 
 	obj.print();
 	obj1.print();
@@ -67,7 +67,7 @@ A(A obj); // ❌ Wrong!
 Most correct version is:
 A(const A &obj) : x(obj.x), y(obj.y)
 {
-    cout << "03. Copy Constructor" << endl;
+	cout << "03. Copy Constructor" << endl;
 }
 const ensures the object passed won’t be modified inside the constructor.
 

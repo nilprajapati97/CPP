@@ -6,7 +6,7 @@ class A
 
 public :
     // void f1()  // -->> compile time binding
-    void f1()  // run time binding
+   virtual void f1()  // run time binding
     {
       cout << "In class A : in function f1 "<<endl;
     }
@@ -32,6 +32,7 @@ int main()
     B o2;
     p=&o2;
     p->f1(); //A;  when virtual -->> //B
+
 
  return 0;
 }

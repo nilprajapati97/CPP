@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 /*
 
@@ -11,42 +11,42 @@ Constructore which does not accept any params called defalt constructure
 class A
 {
   int x;
- 	int y;
- public:
+  int y;
+
+public:
   A()
   {
-        cout<< "01.Constructor" <<endl;  
-        x=10;
-        y=20;
+    cout << "01.Constructor" << endl;
+    x = 10;
+    y = 20;
   }
 
   A(int a)
   {
-    cout<< "02.0 Parameterized Constructor" <<endl;  
-    x=a;
-    y=20;
+    cout << "02.0 Parameterized Constructor" << endl;
+    x = a;
+    y = 20;
   }
 
-  A(int a ,int b)
+  A(int a, int b)
   {
-    cout<< "02.1 Parameterized Constructor" <<endl;  
-    x=a;
-    y=b;
+    cout << "02.1 Parameterized Constructor" << endl;
+    x = a;
+    y = b;
   }
 
   void print() const
   {
-    cout <<"X="<<x<<endl<<"Y="<<y<<endl;
-  
+    cout << "X=" << x << endl
+         << "Y=" << y << endl;
   }
 };
 
 int main()
 {
- A obj1 ,obj2(11,22),obj3(32);
- 
- obj1.print();
- obj2.print();
- obj3.print();
+  A obj1, obj2(11, 22), obj3(32);
 
+  obj1.print();
+  obj2.print();
+  obj3.print();
 }
