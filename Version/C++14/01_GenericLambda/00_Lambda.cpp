@@ -8,7 +8,7 @@ int main() {
     cout << "Sum: " << add(3.14f, 2.86f) << endl;  // Output: 6
     cout << "Sum: " << add(1, 2) << endl;          // Output: 3
     //cout << add("Anil", "Prarajapati") << endl;  // X
-    cout << "Sum: " << add(string("Anil "), std::string("Prarajapati")) << endl;  // Output: Anil Prarajapati
+    cout << "Sum: " << add(string("Anil "), string("Prarajapati")) << endl;  // Output: Anil Prarajapati
 }
 /*
 output:

@@ -1,3 +1,11 @@
+/*
+✅ 1. Structured Bindings
+-------------------------------------
+🔹 Purpose:
+Unpack tuple-like objects (e.g., std::tuple, std::pair, structs) into individual variables.
+
+*/
+
 #include <iostream>
 #include <tuple>
 using namespace std;
