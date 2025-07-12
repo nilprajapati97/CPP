@@ -23,3 +23,8 @@ int main() {
     greet(s);         // No copy
     greet("Audi");    // Works with literals
 }
+/*
+output:
+Hello BMW
+Hello Audi
+*/

@@ -21,3 +21,4 @@ nodiscard [-Wunused-result]
 // Explanation: [[nodiscard]] ensures you don't accidentally ignore important return values.
 // Use it for functions where the return value is crucial, like error codes or results.
 // Example: Use it for functions that return error codes or results that must be checked.
+*/

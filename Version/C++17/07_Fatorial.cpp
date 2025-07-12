@@ -67,20 +67,21 @@ If you're writing a runtime factorial, just use a loop:
 
 #include <iostream>
 #include <utility>
+using namespace std;
 
 template <size_t... Is>
-constexpr size_t factorial_fold(std::index_sequence<Is...>) {
+constexpr size_t factorial_fold(index_sequence<Is...>) {
     return ((Is + 1) * ...);  // 1 * 2 * ... * N
 }
 
 template <size_t N>
 constexpr size_t factorial() {
-    return factorial_fold(std::make_index_sequence<N>{});
+    return factorial_fold(make_index_sequence<N>{});
 }
 
 int main() {
     constexpr size_t fact5 = factorial<5>();  // ✅ Compile-time
-    std::cout << "Factorial(5): " << fact5 << "\n";
+    cout << "Factorial(5): " << fact5 << "\n";
     return 0;
 }
 /*

@@ -42,6 +42,7 @@ Singleton* Singleton::instance = nullptr;
 mutex Singleton::mtx;
 
 int main() {
+    // Get the singleton instance and call a method
     Singleton* s1 = Singleton::getInstance();
     s1->doSomething();
 

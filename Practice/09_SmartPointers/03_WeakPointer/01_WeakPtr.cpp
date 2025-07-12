@@ -8,6 +8,7 @@ and then explain how replacing one shared_ptr with a weak_ptr solves it.
 #include <memory>
 #include <iostream>
 using namespace std;
+
 struct B;
 struct A {
 public:
@@ -15,10 +16,10 @@ public:
     // If you want to break the cyclic reference, use weak_ptr instead
     // weak_ptr<B> bptr; // Uncomment this line to break the cycle
     A() {
-        std::cout << "Constructor -A" << std::endl;
+        cout << "Constructor -A" << endl;
     }
     ~A() {
-        std::cout << "Destructor -A" << std::endl;
+        cout << "Destructor -A" << endl;
     }
     
 };
@@ -26,22 +27,22 @@ public:
 struct B {
 
 public:
-    //shared_ptr<A> aptr;  // shared_ptr creates a cyclic reference
+    //shared_ptr <A> aptr;  // shared_ptr creates a cyclic reference
     // If you want to break the cyclic reference, use weak_ptr instead
     // std::weak_ptr<A> aptr; // Uncomment this line to break the cycle 
     weak_ptr<A> aptr;  // weak_ptr breaks cyclic reference
 
     B() {
-        std::cout << "Constructor -B" << std::endl;
+        cout << "Constructor -B" << endl;
     }
     ~B() {
-        std::cout << "Destructor -B" << std::endl;
+        cout << "Destructor -B" << endl;
     }
 };
 
 int main() {
-    auto a = std::make_shared<A>();
-    auto b = std::make_shared<B>();
+    auto a = make_shared<A>();
+    auto b = make_shared<B>();
     a->bptr = b;
     b->aptr = a; // weak_ptr avoids memory leak
 }
