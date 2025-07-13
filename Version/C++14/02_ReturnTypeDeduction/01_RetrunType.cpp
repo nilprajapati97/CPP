@@ -36,3 +36,19 @@ int main() {
 
     return 0;
 }
+/*
+Output:
+Result: 15
+sum: 8
+Type of result: i
+Type of result: f
+Type of result: f
+Explanation:
+- The `multiply` function returns an `int`, and the compiler deduces this type automatically.
+- The `sum` function returns a `float`, and again, the compiler deduces this type.
+- The `typeid` operator is used to print the deduced types of the results.
+- This feature simplifies function definitions by allowing the compiler to deduce the return type based on the return statement, making the code cleaner and more concise.
+- This is a feature introduced in C++14, which allows for more flexible and readable code.
+- It eliminates the need for explicit return type declarations, making the code easier to maintain and understand.
+- This is particularly useful in generic programming scenarios
+where the return type may vary based on the input types.

@@ -42,7 +42,7 @@ public:
 
 int main()
 {
-    A a1;
+    //A a1;
 
     A *s = new A;
 

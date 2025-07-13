@@ -5,8 +5,8 @@ class A
 {
 
 public :
-    // void f1()  // -->> compile time binding
-    void f1()  // run time binding
+     void f1()  // -->> compile time binding
+    //virtual void f1()  // run time binding
     {
       cout << "In class A : in function f1 "<<endl;
     }
@@ -35,7 +35,12 @@ int main()
 
  return 0;
 }
+/*
+Output
+==============
+In class A : in function f1 
 
+*/
 
 /*
  * Here we have created pointer of base class.

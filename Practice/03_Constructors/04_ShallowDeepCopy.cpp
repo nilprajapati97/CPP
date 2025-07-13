@@ -22,13 +22,13 @@ class A
 
  
  // Deep Copy 
-  A(A &obj)
-  {
-    cout<< "Explicit copy Constructor Constructor" <<endl;
-    str = new char [strlen(obj.str)] +1;
-    strcpy(str,obj.str);
+  // A(A &obj)
+  // {
+  //   cout<< "Explicit copy Constructor Constructor" <<endl;
+  //   str = new char [strlen(obj.str)] +1;
+  //   strcpy(str,obj.str);
 
-  }
+  // }
 
 void modify()
 {

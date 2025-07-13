@@ -24,12 +24,12 @@ class SportScar:public Car
 {
     int x;
 public:
-/*
-void shiftGear()
-   {
-        cout<< "In Child class : ShiftGear" <<endl;
-   } 
-*/
+
+// void shiftGear()
+//    {
+//         cout<< "In Child class : ShiftGear" <<endl;
+//    } 
+
    void f2(int x)
    {
        cout<< "In Child class : f2" <<endl;

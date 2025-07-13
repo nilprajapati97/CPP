@@ -7,11 +7,7 @@
 #include<iostream>
 #include <cstring>
 using namespace std;
-/*
 
-Shallow COpy
-
-*/
 
 class Car
 {
@@ -45,6 +41,7 @@ int main()
 {
     SportScar obj;
     obj.shiftGear();
-    obj.f2();
+    obj.f2(); // X error: no matching function for call to ‘SportScar::f2()’
+ 
 
 }

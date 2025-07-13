@@ -26,10 +26,10 @@ class SportsCar : public Car
 {
 
 public:
-//        void gearChange()
-//	{
-//	  cout << "In class B : in function gearChange "<<endl;
-//	}
+       void gearChange()
+	{
+	  cout << "In class B : in function gearChange "<<endl;
+	}
 
     
     void shiftGear()
@@ -49,9 +49,17 @@ int main()
   Car obj1;
   obj.shiftGear();
   obj1.shiftGear();
- // obj.gearChange();
+  obj.gearChange();
   return 0;
 }
+/*
+Output
+===============
+In class B : in function shiftGear 
+In class A : in function shiftGear 
+
+
+*/
 
 
 
