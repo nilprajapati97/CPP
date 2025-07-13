@@ -3,9 +3,11 @@ using namespace std;
 /*
 1. :: (Scope Resolution Operator)
 ================================
-    -> Why it can't be overloaded:
-    -> The scope resolution operator (::) is used to specify a namespace or class scope.
-        The compiler must determine the scope of an identifier at compile-time, so allowing overloading would break this behavior.
+
+-: Why it can't be overloaded:
+-: The scope resolution operator (::) is used to specify a namespace or class scope.
+    The compiler must determine the scope of an identifier at compile-time,
+    so allowing overloading would break this behavior.
  *
  *
  *
